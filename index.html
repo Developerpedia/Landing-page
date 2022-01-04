@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+<style>
+body {
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+h1{
+ color:#000;
+ font-size:70px;
+ font-weight:400;
+ line-height: 89.62%;
+ font-family:'Playfair Display', serif;
+}
+
+p{
+ color:#000;
+ font-size:22px;
+ font-weight:normal;
+ line-height: 119.5%;
+ font-family:'Poly', serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  padding-right:8ch;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Poly', serif;
+}
+
+.topnav a.support {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  float:left;
+  margin-left:8px;
+  padding-left:9ch;
+  font-family:'Poly', serif;
+}
+
+.topnav a.headwrap {
+  color:#FF0007;
+  font-family: 'Poly', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  padding-top: 1ch;
+  float:left;
+  padding-left:30ch;
+}
+
+.topnav .icon-small{
+    color:#DB1218;
+    padding-left:5px;
+    width:12px;
+    height:6px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.midnav{
+ overflow: hidden;
+  background-color: #0B090A;
+  padding-right:10ch;
+}
+
+.midnav a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family:'Poly', serif;
+  margin-top:7ch;
+  margin-left: 4ch;
+}
+
+.midnav a.support {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  float:left;
+  margin-left:8px;
+  padding-left:9ch;
+  font-family:'Poly', serif;
+}
+
+.midnav a.headwrap {
+  color:#FF0007;
+  font-family: 'Poly', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  padding-top: 1ch;
+  float:left;
+  padding-left:30ch;
+}
+
+.midnav .icon-small{
+    color:#DB1218;
+    padding-left:5px;
+    width:12px;
+    height:6px;
+}
+
+.topnav .icon-hov:hover,
+.topnav .icon-hov:active{
+    color:#DB1218;
+    padding-left:5px;
+    width:12px;
+    height:6px;
+}
+
+.midnav .icon {
+  display: none;
+}
+
+.midnav .creative{
+    Background-color:#DB1218;
+}
+
+.midnav .creative:hover,
+ .midnav .creative:active {
+   background-color:#fff;
+   color:#000;
+ }
+
+ .midnav .special{
+    padding:14px 5px;
+}
+
+.midnav .special:hover,
+.midnav .special:active{
+  border-bottom: 3px solid #DB1218 ;
+}
+
+.midnav .attract{
+    padding:14px 5px;
+}
+
+.midnav .attract:hover,
+.midnav .attract:active{
+  border-bottom: 3px solid #DB1218 ;
+}
+ .midnav .lefty{
+     padding-top:0;
+     float:left;
+     padding-left:7ch;
+ }
+
+ .grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+ }
+
+ .grid-container .wrap-img{
+     padding-left: 7ch;
+     padding-top:6ch;
+     background:url(74499-circle.gif);
+     background-position:left;
+     background-size: cover;
+ }
+
+ .grid-container .wrap-img .response{
+     width:800px;
+     height:800px;
+ }
+
+
+ .grid-container .wrap-text{
+     padding-left: 5ch;
+     padding-top:18ch;
+ }
+
+ .grid-container .wrap-text .button{
+     Background-color:#DB1218;
+     color:#fff;
+     font-family: 'Poly', serif;
+     text-decoration:none;
+     display: inline-block;
+     border-style: none;
+     font-size:20px;
+     padding:10px 26px;
+ }
+
+ .grid-container .wrap-text .button:hover,
+ .grid-container .wrap-text .button:hover{
+     Background-color:#000000;
+ }
+
+ .wrapper{
+     display:grid;
+     justify-content: center;
+     padding-bottom:4ch;
+ }
+
+ .icon-high{
+    color:#DB1218;
+    padding:0 0.3ch;
+    font-size:22px;
+ }
+
+ .icon-low{
+    color:#D3D3D3;
+    padding:0 0.3ch;
+    font-size:22px;
+ }
+
+ .sticky {
+  position: fixed;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .midnav a:not(:first-child) {display: none;}
+  .midnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav{
+      padding:0;
+  }
+
+  .topnav a.support {
+      padding-left:2ch;
+  }
+
+  .topnav a.headwrap {
+      padding-left:12ch;
+  }
+
+  .midnav.responsive {position: relative;}
+  .midnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .midnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .midnav{
+      padding-right:0ch;
+      padding-top:3ch;
+  }
+
+  .midnav a{
+      margin-top:3ch;
+  }
+   
+  .midnav .lefty{
+      padding-left:0;
+  }
+
+  .grid-container{
+  display: inline-block;
+  grid-template-columns: auto auto auto auto;
+ }
+  
+ .grid-container .wrap-img{
+     width:400px;
+     height:200px;
+ }
+
+ .grid-container .wrap-img .response{
+     width:295px;
+     height:250px;
+     margin-bottom:0;
+     padding-left:3ch;
+ }
+
+ .grid-container .wrap-text{
+     padding-left: 5ch;
+     padding-top:16ch;
+     text-align:center;
+ }
+
+ p{
+     padding-right:3ch;
+     display:inline-block;
+ }
+
+ .grid-container .wrap-text .button{
+     Background-color:#DB1218;
+     color:#fff;
+     font-family: 'Poly', serif;
+     text-decoration:none;
+     display: inline-block;
+     border-style: none;
+     font-size:20px;
+     margin-right:2ch;
+ }
+
+ .wrapper{
+     padding-top:3ch;
+     padding-left:4ch;
+     justify-content: center;
+ }
+
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+   <div class="header">
+  <a href="#default" class="support">Support : + 91 - 9090909090</a>
+  <a href="#default" class="headwrap">Book a FREE Test Ride Now</a>
+  </div>
+ 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"> Show More 
+    <i class="ion-chevron-down icon-hov"></i>
+  </a>
+  <a href="#media">Media<i class="ion-chevron-down icon-small"></i></a>
+  <a href="#career">Career</a>
+  <a href="#contact">Contact</a>
+  
+</div>
+
+<div class="midnav" id="mymidnav">
+    <div class="header">
+       <a class="lefty" href="#logo"> <img src="logo.png" alt="rect" style="height:55px; width:55px;"> </a>
+        </div>
+       
+        <a href="javascript:void(0);" class="icon" onclick="thisFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a class="creative" href="#deal">Dealership</a>
+        <a href="Purchase Assistance">Purchase Assistance<i class="ion-chevron-down icon-small"></i></a>
+        <a href="#scooters">Scooters<i class="ion-chevron-down icon-small"></i></a>
+        <a class="attract" href="#Locate">Locate Store</a>
+        <a class="special" href="#About">About</a>
+</div>
+
+
+<div class="grid-container">
+    <div class="wrap-img">
+    <img src= "Scooter.jpg" alt="scooty" class="response">
+    </div>
+   
+    <div class="wrap-text">
+    <h1>A neat <br> headline <br> comes here !</h1>
+    <p> A neat sample text to come here super soon. Till <br> then admire the authentic and delightful User <br> Interface Design of the Website. We are glad you <br> came here , thanks for visiting .</p>
+    <a href="#" class="button">Show Details</a> 
+  </div>
+</div>
+
+<div class="wrapper">
+    <div>
+        <i class="ion-record icon-high"></i>
+        <i class="ion-record icon-low"></i>
+        <i class="ion-record icon-low"></i>
+        <i class="ion-record icon-low"></i>
+        <i class="ion-record icon-low"></i>
+    </div>
+  </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<script>
+    function thisFunction() {
+      var y = document.getElementById("mymidnav");
+      if (y.className === "midnav") {
+        y.className += " responsive";
+      } else {
+        y.className = "midnav";
+      }
+    }
+    </script>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</body>
+</html>
