@@ -1,7 +1,7 @@
 # Landing-page
 Live URL: https://developerpedia.github.io/Landing-page/
 # Note
-Source Code is available in repository. you can download the zip file. thanks !
+Source Code is available in repository. You can download the zip file. thanks !
 # Technologies Used:
 HTML, CSS, JavaScript, jQuery, Animate.css, Visual Studio Code (Text-editor), Google Fonts.
 # Screenshot
