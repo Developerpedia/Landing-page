@@ -235,6 +235,20 @@ p{
 }
 
 @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .midnav a:not(:first-child) {display: none;}
+  .midnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -246,6 +260,7 @@ p{
     display: block;
     text-align: left;
   }
+  
   .topnav{
       padding:0;
       margin:0;
@@ -335,10 +350,6 @@ p{
      padding-left:2ch;
      justify-content: center;
  }
-
- h1{
-     padding-right:1ch;
- }
   
  }
 </style>
@@ -352,7 +363,7 @@ p{
   </div>
  
   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> Show More 
-    <i class="ion-chevron-down icon-hov"></i>
+   
   </a>
   <a href="#media">Media<i class="ion-chevron-down icon-small"></i></a>
   <a href="#career">Career</a>
