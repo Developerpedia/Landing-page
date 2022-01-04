@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 <style>
 body {
   margin: 0;
@@ -233,6 +234,22 @@ p{
   position: fixed;
   width: 100%;
 }
+  
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4{
+    opacity:0;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated{
+    opacity:1;
+}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -359,7 +376,7 @@ p{
 <div class="topnav" id="myTopnav">
    <div class="header">
   <a href="#default" class="support">Support : + 91 - 9090909090</a>
-  <a href="#default" class="headwrap">Book a FREE Test Ride Now</a>
+  <a href="#default" class="headwrap js--wp-4">Book a FREE Test Ride Now</a>
   </div>
  
   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> Show More 
@@ -389,12 +406,12 @@ p{
 
 <div class="grid-container">
     <div class="wrap-img">
-    <img src= "Scooter.jpg" alt="scooty" class="response">
+    <img src= "Scooter.jpg" alt="scooty" class="response js--wp-1">
     </div>
    
     <div class="wrap-text">
-    <h1>A neat <br> headline <br> comes here !</h1>
-    <p> A neat sample text to come here super soon. Till <br> then admire the authentic and delightful User <br> Interface Design of the Website. We are glad you <br> came here , thanks for visiting .</p>
+    <h1 class="js--wp-2">A neat <br> headline <br> comes here !</h1>
+    <p class="js--wp-3"> A neat sample text to come here super soon. Till <br> then admire the authentic and delightful User <br> Interface Design of the Website. We are glad you <br> came here , thanks for visiting .</p>
     <a href="#" class="button">Show Details</a> 
   </div>
 </div>
@@ -445,6 +462,13 @@ function myFunction() {
       }
     }
     </script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+         <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+         <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+         <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+         <script src="vendors/js/jquery.waypoints.min.js"></script>
+         <script src="script.js"></script>
 
 </body>
 </html>
